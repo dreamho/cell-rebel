@@ -1,0 +1,492 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "L5 Swagger API",
+        "description": "L5 Swagger API description",
+        "contact": {
+            "email": "info@wirelessranking.com"
+        },
+        "version": "1.0.0"
+    },
+    "host": "ranking.dev.sapient.pro",
+    "basePath": "/api",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/countries": {
+            "get": {
+                "tags": [
+                    "General"
+                ],
+                "summary": "Get list of countries",
+                "description": "Get list of countries",
+                "operationId": "countries",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/tabstexts": {
+            "get": {
+                "tags": [
+                    "Ranking"
+                ],
+                "summary": "Get list of tab labels for home page",
+                "description": "Get list of tab labels for home page",
+                "operationId": "tabstexts",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/configs": {
+            "get": {
+                "tags": [
+                    "General"
+                ],
+                "summary": "Get config data for tests etc",
+                "description": "Get config data for tests etc",
+                "operationId": "configs",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/ranks": {
+            "get": {
+                "tags": [
+                    "Ranking"
+                ],
+                "summary": "Get ranking for all scores categories",
+                "description": "Get ranking for all scores categories",
+                "operationId": "ranks",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/ranks/all": {
+            "get": {
+                "tags": [
+                    "Ranking"
+                ],
+                "summary": "Get ranking for all scores categories for all countries",
+                "description": "Get ranking for all scores categories for all countries",
+                "operationId": "ranks",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/rankingNationalExperience": {
+            "get": {
+                "tags": [
+                    "Ranking"
+                ],
+                "summary": "Get ranking by national experience",
+                "description": "Get ranking by national experience",
+                "operationId": "rankingNationalExperience",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/rankingNationalQuality": {
+            "get": {
+                "tags": [
+                    "Ranking"
+                ],
+                "summary": "Get ranking by national quality",
+                "description": "Get ranking by national quality",
+                "operationId": "rankingNationalQuality",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/rankingNationalRanking": {
+            "get": {
+                "tags": [
+                    "Ranking"
+                ],
+                "summary": "Get ranking by national ranking",
+                "description": "Get ranking by national ranking",
+                "operationId": "rankingNationalRanking",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/rankingNationalPrice": {
+            "get": {
+                "tags": [
+                    "Ranking"
+                ],
+                "summary": "Get ranking by national price",
+                "description": "Get ranking by national price",
+                "operationId": "rankingNationalPrice",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/reviews": {
+            "get": {
+                "tags": [
+                    "Reviews"
+                ],
+                "summary": "Get reviews for all the operators",
+                "description": "Get reviews for all the operators",
+                "operationId": "reviews",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/operator/rate": {
+            "post": {
+                "tags": [
+                    "Rate"
+                ],
+                "summary": "Submit ranking for an operator",
+                "description": "Submit ranking for an operator",
+                "operationId": "rateOperator",
+                "parameters": [
+                    {
+                        "name": "operator_id",
+                        "in": "formData",
+                        "description": "Operator id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "ux_rating",
+                        "in": "formData",
+                        "description": "User experience rating, 1-5",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "recommend_rating",
+                        "in": "formData",
+                        "description": "Rating for recommendation, 1-10",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "price_rating",
+                        "in": "formData",
+                        "description": "Rating for price, 1-5",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/operator/review": {
+            "post": {
+                "tags": [
+                    "Rate"
+                ],
+                "summary": "Submit review for an operator",
+                "description": "Submit review for an operator",
+                "operationId": "rateOperator",
+                "parameters": [
+                    {
+                        "name": "operator_id",
+                        "in": "formData",
+                        "description": "Operator id",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "reviewTitle",
+                        "in": "formData",
+                        "description": "Title of the review",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "reviewText",
+                        "in": "formData",
+                        "description": "Details of the review",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "reviewerName",
+                        "in": "formData",
+                        "description": "Review author name",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "ux_rating",
+                        "in": "formData",
+                        "description": "User experience rating, 1-5",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/about": {
+            "get": {
+                "tags": [
+                    "Pages"
+                ],
+                "summary": "Get content for the about page",
+                "description": "Get content for the about page",
+                "operationId": "about",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/contact": {
+            "get": {
+                "tags": [
+                    "Pages"
+                ],
+                "summary": "Get content for the contact page",
+                "description": "Get content for the contact page",
+                "operationId": "contact",
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Pages"
+                ],
+                "summary": "Send contact message",
+                "description": "Send contact message",
+                "operationId": "contact",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Operator id",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2_security_example": [
+                            "write:projects",
+                            "read:projects"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {},
+    "securityDefinitions": {
+        "passport": {
+            "type": "oauth2",
+            "flow": "password",
+            "tokenUrl": "/oauth/token",
+            "scopes": {}
+        }
+    }
+}
